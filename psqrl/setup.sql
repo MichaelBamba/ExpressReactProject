@@ -10,5 +10,7 @@ create table blogPosts(blod_id serial primary key,
 
 
 create table Comments (
-    comment_id serial primary key
+    comment_id serial primary key,
+    user_id integer References user(user_id)
+    comment varchar(250)
 )
