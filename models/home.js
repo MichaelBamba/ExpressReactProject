@@ -1,0 +1,1 @@
+Could i make a home page model or ignore it
