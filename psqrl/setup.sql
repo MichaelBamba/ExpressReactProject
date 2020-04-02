@@ -7,17 +7,17 @@ password varchar);
 
 create table blogPosts(post_id serial primary key,
  user_id integer References users(user_id),
- post varchar)
+ post varchar);
 
 
 create table Comments (
     comment_id serial primary key,
-    user_id integer References user(user_id),
+    user_id integer References users(user_id),
     comment varchar(250)
-)
+);
 
 INSERT INTO users (username, email, password)
 VALUES
-('Loki', "Lokie@email.com", "Loki1" )
+('Loki', 'Lokie@email.com', 'Loki1' );
 
 INSERT INTO blogPosts 
