@@ -5,6 +5,7 @@ class postReview {
     this.id = id;
     this.user_id;
     this.post;
+    this.Author;
   }
   static async getpost() {
     try {
