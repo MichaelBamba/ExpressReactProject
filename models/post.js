@@ -1,11 +1,11 @@
-const db = require("./con.js");
+const db = require("./conn.js");
 
-class postReview {
+class postRouter {
   constructor(id, user_id, post) {
     this.id = id;
     this.user_id;
     this.post;
-    this.Author;
+    this.author;
   }
   static async getpost() {
     try {
@@ -27,4 +27,4 @@ class postReview {
   }
 }
 
-module.exports = postReview;
+module.exports = postRouter;
