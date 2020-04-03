@@ -3,8 +3,8 @@ const express = require("express"),
   postsModel = require("../models/post");
 
 router.get("/", async (req, res, next) => {
-  const postData = await postsModel.getAll();
-  res.send(postData).status(200);
+  const postData = await postsModel.getpost();
+  res.json(postData).status(200);
 });
 
 module.exports = router;
